@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style type="text/css">
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+        h1 {
+            margin: 30px auto 20px;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: lighter;
+            text-align: justify;
+        }
+
+        h2 {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            text-align: right;
+        }
+
+        h3 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration:none;
+            color: white;
+        }
+        figcaption {
+                    text-align: center;
+                    margin-top: 35px;
+                }
+
+        button {
+                padding: .5em 1em;
+                margin-bottom: 20px;
+            }
+
+        .container {
+            position: relative;
+            text-align:center;
+            font-weight: bold;
+            font-size: 60px;
+            color:white;}
+
+            .centered {
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                letter-spacing: 1.5px;
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                text-shadow: 6px 2px 10px black}
+
+                .quote {
+                    margin:auto;
+                    width: 1100px;
+                    line-height: 175%;
+                    background-color:rgb(232, 237, 247);
+                    padding: 10px 10px 10px 10px;
+                }
+
+                .column {
+                    float:left;
+                    width: 33.33%;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    margin-bottom: 40px;
+                }
+
+                .pic {
+                    height: 225px;
+                }
+
+                .question {
+                    margin-bottom: 20px;
+                }
+
+                #question {
+                    margin: 20px auto 20px;
+                }
+
+                #line {
+                width:1px;
+                height: 100px;
+                background:black;
+                margin: 50px auto 40px
+                }
+    </style>
+</head>
+
+<body>
+    <main>
+<!--_______________________________________________________________TITLE________________________________________________________________-->
+        <div class="container">
+            <img src="alcatraz_prison_block_cc_img.jpg" width= "100%" >
+        <div class="centered">THE PROBLEM WITH THE AMERICAN PRISON SYSTEM</div>
+    </div>
+    <div id="line"></div>
+    <blockquote class="quote">
+        <h1>“We live in a country that is addicted to incarceration as a tool for social control. As it stands now, justice systems are extremely expensive, do not rehabilitate but in fact make the people that experience them worse and have no evidence based correlatives to reducing crime. Yet with that track record they continue to thrive, prosper and are seen as an appropriate response to children in trouble with the law. Only an addict would see that as an okay result.”</h1>
+        <h2>- JAMES BELL, ATTORNEY, YOUTH JUSTICE ACTIVIST: B. 1954</h2>
+    </blockquote>
+
+    <div id="line"></div>
+<!--_______________________________________THREE PROBLEMS WTIH THE AMERICAN PRISON SYSTEM_______________________________________________-->
+<div class="column">
+    <figure>
+        <h3>Racial Disparity</h3>
+      <a href="https://www.sentencingproject.org/publications/shadow-report-to-the-united-nations-human-rights-committee-regarding-racial-disparities-in-the-united-states-criminal-justice-system/ ">
+      <img class="pic" src="Racial Disparity.jpg"  style="width:100%">
+  </a>
+      <figcaption>
+          
+          <a href="https://www.sentencingproject.org/publications/shadow-report-to-the-united-nations-human-rights-committee-regarding-racial-disparities-in-the-united-states-criminal-justice-system/" style="background-color:  rgb(199, 70, 70); padding: 1em 1.5em;">LEARN MORE</a>
+      </figcaption>
+      </figure>
+    </div>
+    
+    <div class="column">
+      <figure>
+        <h3>Youth Incarceration</h3>
+        <a href="https://www.aclu.org/issues/juvenile-justice/youth-incarceration">
+        <img class="pic" src="Youth Incarceration.JPG" style="width:100%">
+        </a>
+        <figcaption>
+            <a href="https://www.aclu.org/issues/juvenile-justice/youth-incarceration" style="background-color:  rgb(199, 70, 70); padding: 1em 1.5em;">LEARN MORE</a>
+        </figcaption>
+        </figure>
+      </div>
+
+      <div class="column">
+        <figure>
+            <h3>Wrong Convictions From Inadequate Defense</h3>
+          <a href="https://www.innocenceproject.org/causes/inadequate-defense/">
+          <img class="pic" src="Convictions.jpg" style="width:100%">
+          </a>
+          <figcaption>
+              <a href="https://www.innocenceproject.org/causes/inadequate-defense/" style="background-color: rgb(199, 70, 70); padding: 1em 1.5em;">LEARN MORE</a>
+          </figcaption>
+          </figure>
+        </div>
+
+        <div class="question">
+        <p5><span style="font-weight: bold;"> Take a guess</span>: There are more jails than colleges in the U.S.</p5>
+    </div>
+    <div>
+    <button onclick="truee()">True</button>
+    <button onclick="falsee()">False</button>
+</div>
+    <p5 id="choice">
+        <div>
+    <script>
+        function truee() {
+            document.getElementById("choice") .innerHTML= "That is correct. There are over 5000 prisons in the U.S.";
+        }
+
+        function falsee() {
+            document.getElementById('choice') .innerHTML="Not quite... There are over 5000 prisons in the U.S.";
+        }
+    </script>
+    </div>
+    </main>
+</body>
+</html>
